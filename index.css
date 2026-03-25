@@ -1,0 +1,232 @@
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #667eea 100%);
+            background-size: 400% 400%;
+            animation: gradientTransition 8s ease infinite;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        @keyframes gradientTransition {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            text-align: center;
+        }
+
+        .intro-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .intro-section p {
+            flex: 1;
+            margin-bottom: 0;
+        }
+
+        .profile-pic {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+            border: 4px solid #667eea;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+            margin: 0 auto 20px;
+            display: block;
+        }
+
+        .intro-section .profile-pic {
+            float: right;
+            margin: 0 0 0 20px;
+            flex-shrink: 0;
+        }
+
+        h2 {
+            color: #764ba2;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        p {
+            color: #333;
+            line-height: 1.8;
+            font-size: 1.05em;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        p:first-of-type {
+            margin-bottom: 30px;
+            font-size: 1.1em;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: double;
+            margin-top: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px;
+            text-align: left;
+            border: 2px solid #667eea;
+            font-weight: bold;
+        }
+
+        td {
+            padding: 12px;
+            border: 2px solid #667eea;
+            color: #333;
+        }
+
+        tr:hover {
+            background: rgba(102, 126, 234, 0.1);
+        }
+
+        ul {
+            padding-left: 30px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 20px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(102, 75, 162, 0.4);
+        }
+
+        .btn2 {
+            background: linear-gradient(135deg, #431919 0%, #1f0d0d 100%);
+            display: inline-block;
+            border-radius: 0;
+            margin: 20px auto;
+            text-align: center;
+            vertical-align: middle;
+            padding: 0;
+        }
+        .btn1 {
+            background: linear-gradient(135deg, #00b840 0%, #00d11f 100%);
+            display: inline-block;
+            margin: 0 auto;
+            width: auto;
+        }
+        .btn3 {
+            background: linear-gradient(135deg, #efb803 0%, #b49600 100%);
+            display: block;
+            margin: 20px auto;
+            width: fit-content;
+        }
+        .button-row-main {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button-row-sub {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn1,
+        .btn2,
+        .btn3 {
+            display: inline-block;
+            margin: 0;
+            width: auto;
+            min-width: 160px;
+            padding: 12px 24px;
+        }
+
+        .SBR,
+        .codm {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            display: block;
+            margin: 15px auto;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .favorites-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .favorites-grid img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .favorites-grid img:hover {
+            transform: scale(1.05);
+        }
+        .ukulele {
+            width: 300px;
+            height: auto;
+            border-radius: 12px;
+        }
+        .phone {
+            width: 300px;
+            height: auto;
+            border-radius: 12px;
+        }
